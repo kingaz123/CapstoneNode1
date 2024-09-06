@@ -1,0 +1,728 @@
+{
+	"info": {
+		"_postman_id": "2200b729-cb36-49d0-baf1-ee66126cbb5c",
+		"name": "capstone1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38152853"
+	},
+	"item": [
+		{
+			"name": "Dang Ky",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Quang/Desktop/Desktop/Desktop Images/Settings.png"
+						},
+						{
+							"key": "email",
+							"value": "xyz123@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						},
+						{
+							"key": "hoTen",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "tuoi",
+							"value": "30",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-nguoi-dung/dang-ky",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-nguoi-dung",
+						"dang-ky"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dang Nhap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "xyz123@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-nguoi-dung/dang-nhap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-nguoi-dung",
+						"dang-nhap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Them Anh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIwMUBnbWFpbC5jb20iLCJpYXQiOjE2ODAxMTg2MDQsImV4cCI6MTcxMTY3NjIwNH0.W6kfyIft2qu3IRmn6ldCuGWILW8o11HHKrqoGxb0dmo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Quang/Desktop/Desktop/Desktop Images/Browsers folder.jpg"
+						},
+						{
+							"key": "tieuDe",
+							"value": "Apple Vision Pro",
+							"type": "default"
+						},
+						{
+							"key": "duongDan",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "moTa",
+							"value": "Apple Vision Pro",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/them-anh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"them-anh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Luu Anh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1czAyQGdtYWlsLmNvbSIsImlhdCI6MTY4MDE4Njc5NiwiZXhwIjoxNzExNzQ0Mzk2fQ.2ozjtl3_jBmNlEIHZAZSs2ElaF9i_SlfW3km4XlKFMg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/luu-anh?hinhId=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"luu-anh"
+					],
+					"query": [
+						{
+							"key": "hinhId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Binh Luan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODAxNjQ1ODAsImV4cCI6MTcxMTcyMjE4MH0.62ZW_n4QJShiqWUhFR9Iz4jcEvE3TRSpNmJSTT16nGk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hinhId",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "noiDung",
+							"value": "nature picture",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/binh-luan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"binh-luan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chinh Sua Thong Tin Nguoi Dung",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW5sb2MwMUBnbWFpbC5jb20iLCJpYXQiOjE2ODAxOTM1OTMsImV4cCI6MTcxMTc1MTE5M30.iHUg6lDmNwzX9IWXjqv7LSeOzytPH6OvKbiKVeSUrJc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Quang/Desktop/Desktop/Desktop Images/Settings.png"
+						},
+						{
+							"key": "email",
+							"value": "stevejobsgmail.com",
+							"type": "default"
+						},
+						{
+							"key": "hoTen",
+							"value": "stevejobs",
+							"type": "default"
+						},
+						{
+							"key": "tuoi",
+							"value": "30",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-nguoi-dung/chinh-sua-thong-tin-nguoi-dung",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-nguoi-dung",
+						"chinh-sua-thong-tin-nguoi-dung"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Thong Tin Nguoi Dung",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "supersaiyan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-nguoi-dung/lay-thong-tin-nguoi-dung?userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-nguoi-dung",
+						"lay-thong-tin-nguoi-dung"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Danh Sach Anh",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "supersaiyan@gmail.com",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-danh-sach-anh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-danh-sach-anh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xoa Anh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODAxODM5MzQsImV4cCI6MTcxMTc0MTUzNH0.RA0Ix66Vu2iQxZaAGmEN4vQi741K0nWknByXfDWuSD8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hinhId",
+							"value": "5",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/xoa-anh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"xoa-anh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Huy Luu Anh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1czAyQGdtYWlsLmNvbSIsImlhdCI6MTY4MDE4Njc5NiwiZXhwIjoxNzExNzQ0Mzk2fQ.2ozjtl3_jBmNlEIHZAZSs2ElaF9i_SlfW3km4XlKFMg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hinhId",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/huy-luu-anh?hinhId=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"huy-luu-anh"
+					],
+					"query": [
+						{
+							"key": "hinhId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tim Kiem Anh",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "supersaiyan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/tim-kiem-anh?tuKhoa=01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"tim-kiem-anh"
+					],
+					"query": [
+						{
+							"key": "tuKhoa",
+							"value": "01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Thong Tin Anh",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "supersaiyan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-thong-tin-anh?hinhId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-thong-tin-anh"
+					],
+					"query": [
+						{
+							"key": "hinhId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Thong Tin Binh Luan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "supersaiyan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "matKhau",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-thong-tin-binh-luan?hinhId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-thong-tin-binh-luan"
+					],
+					"query": [
+						{
+							"key": "hinhId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Thong Tin Luu Anh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODAxNjQ1ODAsImV4cCI6MTcxMTcyMjE4MH0.62ZW_n4QJShiqWUhFR9Iz4jcEvE3TRSpNmJSTT16nGk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-thong-tin-luu-anh?hinhId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-thong-tin-luu-anh"
+					],
+					"query": [
+						{
+							"key": "hinhId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Danh Sach Anh Da Tao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODAxNjQ1ODAsImV4cCI6MTcxMTcyMjE4MH0.62ZW_n4QJShiqWUhFR9Iz4jcEvE3TRSpNmJSTT16nGk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-danh-sach-anh-da-tao?userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-danh-sach-anh-da-tao"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lay Danh Sach Anh Da Luu",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmNvcmV1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODAxNjQ1ODAsImV4cCI6MTcxMTcyMjE4MH0.62ZW_n4QJShiqWUhFR9Iz4jcEvE3TRSpNmJSTT16nGk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/quan-ly-hinh-anh/lay-danh-sach-anh-da-luu?userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quan-ly-hinh-anh",
+						"lay-danh-sach-anh-da-luu"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
